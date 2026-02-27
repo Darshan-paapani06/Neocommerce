@@ -1,0 +1,214 @@
+.products-page {
+    padding-top: 80px;
+    min-height: 100vh;
+}
+
+.products-header {
+    padding: 48px 0 32px;
+    border-bottom: 1px solid var(--border);
+}
+
+.products-title {
+    font-size: clamp(2rem, 4vw, 3rem);
+}
+
+.products-subtitle {
+    color: var(--text2);
+    margin-top: 6px;
+}
+
+.products-layout {
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    gap: 40px;
+    padding-top: 40px;
+    padding-bottom: 60px;
+}
+
+.filters-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.filter-section {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.filter-label {
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--text3);
+}
+
+.search-wrap {
+    position: relative;
+}
+
+.search-icon {
+    position: absolute;
+    left: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--text3);
+    pointer-events: none;
+}
+
+.search-input {
+    padding-left: 40px;
+    padding-right: 36px;
+}
+
+.search-clear {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: var(--text3);
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding: 0;
+}
+
+.search-clear:hover {
+    color: var(--text);
+}
+
+.category-list {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.cat-btn {
+    text-align: left;
+    padding: 10px 14px;
+    border-radius: var(--radius-sm);
+    background: none;
+    border: 1px solid transparent;
+    color: var(--text2);
+    font-size: 0.9rem;
+    transition: all 0.2s;
+}
+
+.cat-btn:hover {
+    background: var(--surface);
+    color: var(--text);
+}
+
+.cat-btn.active {
+    background: rgba(108, 99, 255, 0.1);
+    border-color: rgba(108, 99, 255, 0.3);
+    color: var(--accent);
+    font-weight: 600;
+}
+
+.sort-select {
+    background: var(--surface);
+    color: var(--text);
+}
+
+.sort-select option {
+    background: var(--surface);
+}
+
+.clear-filters {
+    font-size: 0.85rem;
+    padding: 10px 16px;
+}
+
+.products-main {
+    min-height: 400px;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 20px;
+}
+
+.loading-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 20px;
+}
+
+.skeleton-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    overflow: hidden;
+}
+
+.skeleton-img {
+    height: 200px;
+    background: linear-gradient(90deg, var(--surface) 25%, var(--surface2) 50%, var(--surface) 75%);
+    background-size: 200% 100%;
+    animation: shimmer 1.5s infinite;
+}
+
+.skeleton-body {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.skeleton-line {
+    height: 14px;
+    border-radius: 4px;
+    background: linear-gradient(90deg, var(--surface) 25%, var(--surface2) 50%, var(--surface) 75%);
+    background-size: 200% 100%;
+    animation: shimmer 1.5s infinite;
+}
+
+.skeleton-line.short {
+    width: 70%;
+}
+
+.skeleton-line.shorter {
+    width: 40%;
+}
+
+@keyframes shimmer {
+    to {
+        background-position: -200% 0;
+    }
+}
+
+.empty-state {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.empty-icon {
+    font-size: 3rem;
+    margin-bottom: 16px;
+}
+
+.empty-state h3 {
+    font-size: 1.3rem;
+    margin-bottom: 8px;
+}
+
+.empty-state p {
+    color: var(--text2);
+}
+
+@media (max-width: 900px) {
+    .products-layout {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .products-grid {
+        grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    }
+}

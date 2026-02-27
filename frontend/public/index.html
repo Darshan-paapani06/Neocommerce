@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#080810" />
+    <meta name="description" content="NeoCommerce — The Future of Shopping. Premium products curated for those who move at the speed of tomorrow." />
+    <meta name="keywords" content="NeoCommerce, shopping, ecommerce, fashion, accessories, electronics" />
+    <meta name="author" content="NeoCommerce" />
+
+    <!-- Open Graph / Social Preview -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="NeoCommerce — Shop the Future" />
+    <meta property="og:description" content="Premium products curated for those who move at the speed of tomorrow." />
+    <meta property="og:url" content="http://localhost:3000" />
+
+    <!-- Favicon (inline SVG as data URI) -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>◈</text></svg>" />
+    <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>◈</text></svg>" />
+
+    <!-- Google Fonts — Syne (display) + DM Sans (body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300;1,9..40,400&display=swap" rel="stylesheet" />
+
+    <title>NeoCommerce — Shop the Future</title>
+
+    <!-- Prevent flash of white background before React loads -->
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        html,
+        body {
+            background-color: #080810;
+            color: #f0f0fa;
+            min-height: 100vh;
+            font-family: 'DM Sans', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        /* Initial loading screen shown before React mounts */
+        
+        #root:empty::before {
+            content: '◈';
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 3rem;
+            color: #6c63ff;
+            animation: pulse 1.2s ease-in-out infinite;
+        }
+        
+        @keyframes pulse {
+            0%,
+            100% {
+                opacity: 1;
+                transform: translate(-50%, -50%) scale(1);
+            }
+            50% {
+                opacity: 0.3;
+                transform: translate(-50%, -50%) scale(0.85);
+            }
+        }
+        /* Prevent horizontal scroll during page transitions */
+        
+        body {
+            overflow-x: hidden;
+        }
+        /* Native scrollbar styling (visible before React loads too) */
+        
+         ::-webkit-scrollbar {
+            width: 6px;
+        }
+        
+         ::-webkit-scrollbar-track {
+            background: #080810;
+        }
+        
+         ::-webkit-scrollbar-thumb {
+            background: #22223a;
+            border-radius: 99px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Shown only if JavaScript is disabled -->
+    <noscript>
+      <div style="
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        background: #080810;
+        color: #f0f0fa;
+        font-family: sans-serif;
+        text-align: center;
+        padding: 24px;
+      ">
+        <div style="font-size: 3rem; margin-bottom: 16px;">◈</div>
+        <h1 style="font-size: 1.5rem; margin-bottom: 8px;">JavaScript Required</h1>
+        <p style="color: #a0a0c0;">
+          NeoCommerce requires JavaScript to run.<br />
+          Please enable JavaScript in your browser settings.
+        </p>
+      </div>
+    </noscript>
+
+    <!--
+      React mounts here.
+      All files connected through this root div:
+        ├── src/index.js         → entry point, renders <App />
+        ├── src/App.js           → routes + AuthProvider + CartProvider
+        ├── src/index.css        → global styles, CSS variables
+        ├── src/context/
+        │     ├── AuthContext.js → JWT auth state
+        │     └── CartContext.js → cart state
+        ├── src/services/api.js  → Axios API layer → backend :5000
+        ├── src/components/
+        │     ├── Navbar.js      → top navigation bar
+        │     └── ProductCard.js → individual product card
+        └── src/pages/
+              ├── Home.js        → landing page
+              ├── Products.js    → shop / product listing
+              ├── Cart.js        → shopping cart
+              ├── Login.js       → login form
+              └── Register.js    → register form
+    -->
+    <div id="root"></div>
+
+</body>
+
+</html>
