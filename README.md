@@ -1,4 +1,4 @@
-# 🛒 NeoCommerce — Modern E-Commerce Platform
+<img width="612" height="408" alt="image" src="https://github.com/user-attachments/assets/ff943819-1283-4622-8417-c74fa1b1fce5" /># 🛒 NeoCommerce — Modern E-Commerce Platform
 
 <div align="center">
 
@@ -54,13 +54,13 @@
 
 ### 🛍️ Product Listing
 ### 🛍️ Product Listing
-![Products](https://media.giphy.com/media/xT9IgzoKnwFNmISR8I/giphy.gif)
+![Products](https://media.istockphoto.com/id/1474764768/photo/smart-warehouse-inventory-management-system-concept.jpg?s=612x612&w=0&k=20&c=S3FqWmAMhvGQkeQH7J5RRDkxBeY-gIHjnEmCp181ubo=)
 
 ### 🛒 Cart Page
-![Cart]([https://media.istockphoto.com/id/1481649924/vector/media-music-player-interface-isolated-on-white-background-multimedia-frame-template-mockup.jpg?s=612x612&w=0&k=20&c=m1tqjE3lykDdPwqWbaF63s340vhmjhTNGWZVRbl7ccM=](https://media.istockphoto.com/id/1316249302/video/beautiful-authentic-female-online-shopping-on-her-smartphone-at-home-living-room-while-lying.avif?s=640x640&k=20&c=BWDJxrbCqvay7NFo6y9lgec38NsUR9OmKfkeNiJbofc=))
+![Cart](https://media.istockphoto.com/id/2044735585/vector/online-grocery-shopping-set-shopping-basket-bag-and-trolley-cart-full-of-grocery-products.jpg?s=612x612&w=0&k=20&c=u8HTjTwyIycbijVcqbCY5jIHxWDF6QHuTdnTFo49NIc=)
 
 ### 🔐 Login / Register
-![Auth]([https://media.istockphoto.com/id/1411436117/photo/the-dark-stage-shows-dark-blue-background-an-empty-dark-scene-neon-light-and-spotlights-the.jpg?s=612x612&w=0&k=20&c=76rUnkn7FUSn3AgMF6PPedMyt-Cmedlin1kdgwMdkac=](https://media.istockphoto.com/id/538615824/video/4k-login-page.avif?s=640x640&k=20&c=4wFYP1rpi8H6c3ficJtOFpwcevr0hAR2PkKDErdfiR0=))
+![Auth](https://media.istockphoto.com/id/2193962032/photo/businessman-and-screen-login-username-and-password-identity-or-sign-up-register-of-cyber.jpg?s=612x612&w=0&k=20&c=sbnCO-UwiXHmsyMarjToZ7JmM4nqUnGZ6giK9Jj94a0=)
 
 </div>
 
