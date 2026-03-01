@@ -1,4 +1,4 @@
-<img width="612" height="408" alt="image" src="https://github.com/user-attachments/assets/ff943819-1283-4622-8417-c74fa1b1fce5" /># 🛒 NeoCommerce — Modern E-Commerce Platform
+🛒 NeoCommerce — Modern E-Commerce Platform
 
 <div align="center">
 
